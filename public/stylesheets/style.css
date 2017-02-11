@@ -1,5 +1,8 @@
+body{
+    padding-top: 70px;
+}
 .thumbnail img{
-    max-height: 300px
+    max-height: 250px
 }
 .navbar{
     background-color: lightblue
