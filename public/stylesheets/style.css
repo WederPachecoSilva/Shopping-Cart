@@ -1,0 +1,17 @@
+.thumbnail img{
+    max-height: 300px
+}
+.navbar{
+    background-color: lightblue
+}
+.thumbnail .description{
+    color: #7f7f7f;   
+}
+.price{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.center{
+    text-align: center;
+}
