@@ -2,7 +2,10 @@ body{
     padding-top: 70px;
 }
 .thumbnail img{
-    max-height: 250px
+    height: 250px
+}
+.thumbnail{
+    height: 500px
 }
 .navbar{
     background-color: lightblue
@@ -17,4 +20,7 @@ body{
 }
 .center{
     text-align: center;
+}
+.btn{
+    margin-bottom: 20px
 }

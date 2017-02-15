@@ -5,25 +5,49 @@ mongoose.connect('localhost:27017/shopping');
 
 let produtos = [
     new Produto({
-        imagemPath: '../public/images/1.jpg',
+        imagemPath: '/images/1.jpg',
         titulo: 'Minha foto',
         descricao: "Minha foto de batismo para venda",
         preco: 25
     }),
      new Produto({
-        imagemPath: '../public/images/3.jpg',
-        titulo: 'Minha foto',
-        descricao: "Minha foto de batismo para venda",
-        preco: 12
+        imagemPath: '/images/3.jpg',
+        titulo: 'Mortal Kombat 6',
+        descricao: "Sônia quer vingança e vai bater em todos que encontrar no caminho",
+        preco: 32.66
     }),
      new Produto({
-        imagemPath: '../public/images/4.jpg',
+        imagemPath: '/images/4.jpg',
         titulo: 'Minha foto',
         descricao: "Minha foto de batismo para venda",
         preco: 10
     }),
      new Produto({
-        imagemPath: '../public/images/2.jpg',
+        imagemPath: '/images/2.jpg',
+        titulo: 'Minha foto',
+        descricao: "Minha foto de batismo para venda",
+        preco: 30.00
+    }),
+    new Produto({
+        imagemPath: '/images/1.jpg',
+        titulo: 'Minha foto',
+        descricao: "Minha foto de batismo para venda",
+        preco: 25.00
+    }),
+     new Produto({
+        imagemPath: '/images/3.jpg',
+        titulo: 'Minha foto',
+        descricao: "Minha foto de batismo para venda",
+        preco: 12
+    }),
+     new Produto({
+        imagemPath: '/images/4.jpg',
+        titulo: 'Minha foto',
+        descricao: "Minha foto de batismo para venda",
+        preco: 10
+    }),
+     new Produto({
+        imagemPath: '/images/2.jpg',
         titulo: 'Minha foto',
         descricao: "Minha foto de batismo para venda",
         preco: 30
