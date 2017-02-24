@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
 const Produto = require('../models/produto');
+const csurf = require('csurf');
+
+let csrfProtection = csurf();
+router.use(csrfProtection);
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   //Produto.find() irá retornar um array de objetos
   Produto.find(
     (err,docs) => {
@@ -14,11 +18,13 @@ router.get('/', function(req, res, next) {
       for (let i = 0; i < docs.length; i += chunkSize) {
         productChunks.push(docs.slice(i, i + chunkSize));
       }
-      console.log(productChunks);
       res.render('shop/index', {title: 'Meu e-commerce', produtos: productChunks});
     }
   )
 });
 
+router.get('/user/signup', (req, res, next) => {
+  res.render("user/signup",  {csrfToken: req.csrfToken()})
+});
 
 module.exports = router;
