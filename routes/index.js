@@ -27,4 +27,6 @@ router.get('/user/signup', (req, res, next) => {
   res.render("user/signup",  {csrfToken: req.csrfToken()})
 });
 
+router.post('/user/signup', (req, res) => res.redirect('/'))
+
 module.exports = router;
